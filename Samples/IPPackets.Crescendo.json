@@ -1,0 +1,43 @@
+{
+    "$schema": "../src/Microsoft.PowerShell.Crescendo.Schema.json",
+    "Verb": "Get",
+    "Noun": "IPPackets",
+    "Description": "PowerShell Wrapper for TCPDump",
+    "OriginalName": "/usr/sbin/tcpdump",
+    "Usage": {
+        "Synopsis": "Run invoke-ifconfig"
+    },
+    "Elevation": {
+        "Command": "sudo"
+    },
+    "Parameters": [
+        {
+            "Name": "Interface",
+            "OriginalName": "-i",
+            "Description": "Used to read packets from the interface",
+            "ParameterType": "string",
+            "DefaultValue": ""
+        },
+        {
+            "Name": "File",
+            "OriginalName": "-r",
+            "Description": "Used to read in a PCAP",
+            "ParameterType": "string",
+            "DefaultValue": ""
+        },
+        {
+            "Name": "Print",
+            "OriginalName": "--print",
+            "Description": "Print packets to the screen, even it they are being written to a file",
+            "ParameterType": "switch",
+            "DefaultValue": ""
+        }
+    ],
+    "Ouputhandlers": [
+        {
+            "ParameterSetName":"Default",
+            "handler": "$args[0] | select-object -skip 2 | %{$time,$protocol,$source,$direction,$dest,$flags,$fstat = $_ -split ' '; | [pscustomobject]@{Time = $time; Protocol = $protocol; SourceIP = $source; Direction = $direction; DestinationIP = $dest; Flags = $flags; TCPFlags = $fstat} }"
+        }
+         
+    ]
+}
