@@ -1,0 +1,19 @@
+{
+    "$schema" : "./Microsoft.PowerShell.Crescendo.Schema.json",
+    "Verb": "Get",
+    "Noun": "NetPackets",
+    "OriginalName":"/usr/sbin/tcpdump",
+    "Parameters": [
+        {
+            "Name":"Interface",
+            "OriginalName": "-i",
+            "ParameterType": "string"
+        },
+        {
+            "Name": "File",
+            "OriginalName": "-f",
+            "ParameterType": "string"
+        }
+
+    ]
+}

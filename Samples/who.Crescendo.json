@@ -1,18 +1,18 @@
 {
     "$schema" : "./Microsoft.PowerShell.Crescendo.Schema.json",
-    "Verb": "Invoke",
-    "Noun": "who",
-    "OriginalName":"/usr/bin/who",
+    "Verb": "Get",
+    "Noun": "NetPackets",
+    "OriginalName":"/usr/sbin/tcpdump",
     "Parameters": [
         {
-            "Name":"BootTime",
-            "OriginalName": "-b",
-            "ParameterType": "switch"
+            "Name":"Interface",
+            "OriginalName": "-i",
+            "ParameterType": "string"
         },
         {
-            "Name": "quiet",
-            "OriginalName": "-q",
-            "ParameterType": "switch"
+            "Name": "File",
+            "OriginalName": "-f",
+            "ParameterType": "string"
         }
 
     ]
