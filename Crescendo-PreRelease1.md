@@ -39,6 +39,3 @@ Bad Example `Export-CrescendoModule ./IPPackets.Crescendo.json ./Get-NetTraffic/
 Good Example `Export-CrescendoModule -ConfigurationFile ./IPPackets.Crescendo.json -ModuleName ./Get-NetTraffic/Get-NetTraffic.psm1`
 
 Future PSTool C:\Windows\system32\pktmon.exe
-
-
-oy2ga62erl2ury6lnvdqsoy27cwr4vau3g3dtsu6llyhyu
