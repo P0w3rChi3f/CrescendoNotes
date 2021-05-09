@@ -1,0 +1,34 @@
+# Crescendo walkthrough pre-Release1
+
+Work based off of Jason Helmick Blog ["Announcing PowerShell Crescendo Preview.1"](https://devblogs.microsoft.com/powershell/announcing-powershell-crescendo-preview-1/)
+
+```powershell
+find-module *crescendo*
+Install-Module Microsoft.PowerShell.Crescendo
+get-command *crescendo*
+```
+
+* Export-CrescendoModule  
+* New-CrescendoCommand  
+
+```powershell
+get-help New-CrescendoCommand
+Get-Help about_Crescendo
+New-CrescendoCommand -verb get -noun packets
+```
+
+## Location of Crescendo.Schema.json file
+
+`$env:HOME/.local/share/powershell/Modules/Microsoft.PowerShell.Crescendo/0.4.1/Microsoft.PowerShell.Crescendo.Schema.json`
+`$env:HOME/.local/share/powershell/Modules/Microsoft.PowerShell.Crescendo/0.4.1/Samples`
+
+## Create Cresendo.json
+
+1. I could not find any out put for `New-CrescendoCommand -verb get -noun packets`
+2. Copied a sample Cresendo.json and edited it to work with tcpdump
+3. Just started off with a simple `tcpdump -i <interfacename>` and `tcpdump -r <path/to/pcap>
+
+Future PSTool C:\Windows\system32\pktmon.exe
+
+
+oy2ga62erl2ury6lnvdqsoy27cwr4vau3g3dtsu6llyhyu
