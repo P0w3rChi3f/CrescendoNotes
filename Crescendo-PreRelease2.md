@@ -49,7 +49,6 @@ Example: `Import-Module ./Get-NetTraffic/Get-NetTraffic.psm1`
 
 Your new command should be ready to use, just type the cmdlet and parameter you wish to use, and presto, you now have TCPDump wrapped in PowerShell.
 
-
 ## Test data
 
 `wget https://gitlab.com/wireshark/wireshark/-/wikis/uploads/__moin_import__/attachments/SampleCaptures/arp-storm.pcap`
