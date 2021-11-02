@@ -19,5 +19,5 @@ My edited version of the Vagrant file is located in the [LabFiles](./LabFiles/Va
 
 ```bash
  sudo apt-get update
- sudo apt-get upgrade
+ sudo apt upgrade
 ```
